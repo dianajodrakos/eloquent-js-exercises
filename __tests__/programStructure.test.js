@@ -27,9 +27,9 @@ describe('tests functions for Program Structure Exercises', () => {
   });
 
   it('chessboard logs an ASCII chessboard to the console with a grid size of 8x8.', () => {
-    chessboard();
+    chessboard(7);
     expect(console.log).toBeCalledTimes(1);
-    expect(console.log).toHaveBeenLastCalledWith(' # # # #\n# # # # \n # # # #\n# # # # \n # # # #\n# # # # \n # # # #\n# # # # ');
+    expect(console.log).toHaveBeenLastCalledWith(' # # # \n# # # #\n # # # \n# # # #\n # # # \n# # # #\n # # # ');
   });
 
 });

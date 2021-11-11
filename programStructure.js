@@ -21,7 +21,7 @@ const fizzBuzz = (n) => {
   }
 };
 
-const chessboard = () => {
+const chessboard = (n) => {
 //takes in a number 8
 //should create a string that's a grid of 8x8 and log it to the console
 
@@ -36,27 +36,33 @@ const chessboard = () => {
 //can we use math stuff to expedite this process?
 
 //let's start with a loop
-const grid = 8;
 let board = '';
 let oddRow = '';
+let evenRow = '';
+const oddSquare = ' ';
+const evenSquare = '#';
 
-  for (let i = 1; i <= grid; i++) {
+  for (let i = 1; i <= n; i++) {
     if (i % 2) {
-      oddRow = oddRow + ' ';
+      oddRow = oddRow + oddSquare;
     } else {
-      oddRow = oddRow + '#';
+      oddRow = oddRow + evenSquare;
     }
   }
 
-  const evenRow = oddRow.slice(1, grid).concat(oddRow.slice(0, 1));
+  if (n % 2) {
+    evenRow = oddRow.slice(1, n).concat(evenSquare);
+  } else {
+    evenRow = oddRow.slice(1, n).concat(oddSquare);
+  }
 
-  for (let i = 1; i <= grid; i++) {
+  for (let i = 1; i <= n; i++) {
     if (i % 2) {
       board = board + oddRow;
     } else {
       board = board + evenRow;
     }
-    if (i < grid) {
+    if (i < n) {
       board = board + '\n';
     }
   }
