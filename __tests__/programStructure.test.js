@@ -16,11 +16,13 @@ describe('tests functions for Program Structure Exercises', () => {
     expect(console.log).toHaveBeenLastCalledWith('#######');
   });
 
-  it('generatePyramid takes in a string and logs an ASCII pyramid of that string in the console.', () => {
+  it('fizzBuzz takes in a number and logs out \'Fizz\' for numbers divisible by 3, \'Buzz\' for numbers divisible by 5, and \'FizzBuzz\' for numbers divisible by both 3 and 5.', () => {
     fizzBuzz(1);
     expect(console.log).toBeCalledTimes(15);
     expect(console.log).toHaveBeenLastCalledWith('FizzBuzz');
   });
+
+
 
 });
 
