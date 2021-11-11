@@ -5,4 +5,11 @@ const generatePyramid = string => {
   }
 };
 
-module.exports = { generatePyramid };
+const fizzBuzz = () => {
+
+};
+
+module.exports = { 
+  generatePyramid,
+  fizzBuzz
+};

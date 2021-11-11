@@ -1,4 +1,4 @@
-const { generatePyramid } = require('../programStructure.js');
+const { generatePyramid, fizzBuzz } = require('../programStructure.js');
 
 const log = jest.spyOn(console, 'log').mockImplementation();
 
@@ -15,6 +15,13 @@ describe('tests functions for Program Structure Exercises', () => {
     expect(console.log).toBeCalledTimes(7);
     expect(console.log).toHaveBeenLastCalledWith('#######');
   });
+
+  it('generatePyramid takes in a string and logs an ASCII pyramid of that string in the console.', () => {
+    fizzBuzz();
+    expect(console.log).toBeCalledTimes(100);
+    expect(console.log).toHaveBeenLastCalledWith('BUZZ');
+  });
+
 });
 
 
