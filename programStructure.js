@@ -22,25 +22,11 @@ const fizzBuzz = (n) => {
 };
 
 const chessboard = (n) => {
-//takes in a number 8
-//should create a string that's a grid of 8x8 and log it to the console
-
-//odd squares are ' '
-//even squares are '#'
-
-//odd rows and columns also start with ' '
-//even rows and columns also start with '#'
-
-//the easy way to do this would be to use a loop and add to the string on each loop, but processing time might be slow for very large numbers
-
-//can we use math stuff to expedite this process?
-
-//let's start with a loop
-let board = '';
-let oddRow = '';
-let evenRow = '';
-const oddSquare = ' ';
-const evenSquare = '#';
+  let board = '';
+  let oddRow = '';
+  let evenRow = '';
+  const oddSquare = ' ';
+  const evenSquare = '#';
 
   for (let i = 1; i <= n; i++) {
     if (i % 2) {
