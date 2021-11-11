@@ -1,3 +1,3 @@
-const { fizzBuzz } = require('./programStructure');
+const { chessboard } = require('./programStructure');
 
-fizzBuzz('1');
+chessboard();

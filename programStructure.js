@@ -21,7 +21,12 @@ const fizzBuzz = (n) => {
   }
 };
 
+const chessboard = () => {
+  
+}
+
 module.exports = { 
   generatePyramid,
-  fizzBuzz
+  fizzBuzz,
+  chessboard
 };
