@@ -22,7 +22,7 @@ const fizzBuzz = (n) => {
 };
 
 const chessboard = () => {
-  
+
 }
 
 module.exports = { 
