@@ -17,9 +17,9 @@ describe('tests functions for Program Structure Exercises', () => {
   });
 
   it('generatePyramid takes in a string and logs an ASCII pyramid of that string in the console.', () => {
-    fizzBuzz();
-    expect(console.log).toBeCalledTimes(100);
-    expect(console.log).toHaveBeenLastCalledWith('BUZZ');
+    fizzBuzz(1);
+    expect(console.log).toBeCalledTimes(15);
+    expect(console.log).toHaveBeenLastCalledWith(15);
   });
 
 });
